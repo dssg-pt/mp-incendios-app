@@ -118,7 +118,7 @@ export default function CustomDrawer() {
             </svg>
             <Typography color="black">
               {" "}
-              INCÊNDIOS EM PORTUGAL ENTRE 1980 E 2021
+              INCÊNDIOS EM PORTUGAL CONTINENTAL ENTRE 1980 E 2021
             </Typography>
           </Toolbar>
         </MuiAppBar>
