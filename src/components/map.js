@@ -1,4 +1,3 @@
-import Container from "@mui/material/Container";
 import Toolbar from "@mui/material/Toolbar";
 
 export default function Map() {
@@ -12,7 +11,8 @@ export default function Map() {
           width: "100%",
           border: "none",
         }}
-        src="https://kepler.gl/demo/map?mapUrl=https://dl.dropboxusercontent.com/s/m8b7kej258rtv58/keplergl_7al6go.json"
+        src="https://kepler.gl/demo/map?mapUrl=https://raw.githubusercontent.com/dssg-pt/mp-incendios/main/map/map_fogos_ptcontinental_1980_2021.json"
+        title="Mapa que representa a evolução de área ardida em Portugal continental entre 1980 e 2021"
       ></iframe>
     </div>
   );

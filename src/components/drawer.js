@@ -15,7 +15,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import { HashRouter as Router, Link } from "react-router-dom";
 
-import "./drawer.css";
+import "./styles.css";
 
 export default function CustomDrawer() {
   const [state, setState] = React.useState({
@@ -40,21 +40,19 @@ export default function CustomDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <List>
-        {["Mapa", "Como usar", "Metodologia", "Dataset", "Autores"].map(
-          (text) => (
-            // <Link to="/">
-            <ListItem key={text} disablePadding>
-              <ListItemButton>
-                <Link
-                  to={"/" + text}
-                  style={{ textDecoration: "none", color: "black" }}
-                >
-                  <ListItemText primary={text} />
-                </Link>
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
+        {["Mapa", "Como usar", "Dataset", "Sobre"].map((text) => (
+          // <Link to="/">
+          <ListItem key={text} disablePadding>
+            <ListItemButton>
+              <Link
+                to={"/" + text}
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                <ListItemText primary={text} />
+              </Link>
+            </ListItemButton>
+          </ListItem>
+        ))}
       </List>
       <Divider />
       <List>

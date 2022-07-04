@@ -3,7 +3,7 @@ import CustomDrawer from "./components/drawer.js";
 import Map from "./components/map.js";
 import HowTo from "./components/howTo.js";
 import Methodology from "./components/methodology.js";
-import Authors from "./components/authors.js";
+import About from "./components/about.js";
 import Other from "./components/otherResources.js";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import ReactDOM from "react-dom";
@@ -25,12 +25,12 @@ export default function App() {
       <ThemeProvider theme={theme}>
         <Router basemname={`/${process.env.PUBLIC_URL}`}>
           <Routes>
-            <Route path={"/"} element={<Map />} />
-            <Route path={"/Mapa"} element={<Map />} />
-            <Route path={"/Como%20usar"} element={<HowTo />} />
-            <Route path={"/Metodologia"} element={<Methodology />} />
-            <Route path={"/Autores"} element={<Authors />} />
-            <Route path={"/outros"} element={<Other />} />
+            <Route exact path={"/"} element={<Map />} />
+            <Route exact path={"/Mapa"} element={<Map />} />
+            <Route exact path={"/Como%20usar"} element={<HowTo />} />
+            <Route exact path={"/Dataset"} element={<Methodology />} />
+            <Route exact path={"/Sobre"} element={<About />} />
+            <Route exact path={"/outros"} element={<Other />} />
           </Routes>
           <CustomDrawer></CustomDrawer>
         </Router>

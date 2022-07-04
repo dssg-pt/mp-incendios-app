@@ -1,27 +1,63 @@
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import "./styles.css";
 
 export default function Methodology() {
   return (
     <div>
       <Toolbar />
-      <Typography variant="h5" sx={{ margin: "1%" }}>
-        Metodologia
+      <Typography variant="h5" className="paragraphs">
+        Dataset
       </Typography>
-      <Typography sx={{ margin: "1%" }}>
-        {" "}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        placerat at sem tincidunt porta. Donec eleifend porttitor odio id
-        facilisis. Ut justo ipsum, placerat eget arcu non, placerat convallis
-        diam. Aenean sit amet nunc tempor, pretium libero tincidunt, hendrerit
-        lorem. Sed facilisis lorem et nunc aliquet, sit amet feugiat lacus
-        viverra. Phasellus in diam non magna laoreet lacinia. Curabitur in
-        scelerisque ex. Sed ultricies pellentesque lacus sodales rutrum. Integer
-        congue placerat imperdiet. Suspendisse rhoncus lorem vitae lacinia
-        dignissim. Nam eget porttitor quam, non luctus erat. Nulla risus magna,
-        consectetur vitae pulvinar ut, congue ut tortor. Etiam elit enim, luctus
-        a quam sed, egestas accumsan neque. Suspendisse non ante in ex tristique
-        imperdiet vel a nisi. Ut vulputate imperdiet mattis.
+      <Typography className="paragraphs">
+        Os dados desta visualização resultam da compilação, limpeza, filtragem e
+        validação de várias fontes de dados disponibilizados pelo{" "}
+        <a href="https://www.icnf.pt/" target="_blank" rel="noreferrer">
+          Instituto de Conservação da Natureza e das Florestas (ICNF)
+        </a>
+        :
+      </Typography>
+      <Typography className="paragraphs">
+        <ul>
+          <li>
+            Para o período 1980-2015, através do arquivo histórico do ICNF
+            disponibilizado no{" "}
+            <a
+              href="https://github.com/centraldedados/incendios/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              repositório de incêndios da Central de Dados{" "}
+            </a>
+          </li>
+          <li>
+            Para o período 2015-2021, através do serviço web do ICNF, extraído
+            através da ferramenta{" "}
+            <a
+              href="https://github.com/vostpt/icnf_mapas"
+              target="_blank"
+              rel="noreferrer"
+            >
+              icnf_mapas
+            </a>{" "}
+            da{" "}
+            <a href="https://vost.pt" target="_blank" rel="noreferrer">
+              VOST PT
+            </a>
+          </li>
+        </ul>
+      </Typography>
+      <Typography className="paragraphs">
+        Todos os dados, incluindo as versões originais e as transformadas, estão
+        disponíveis no{" "}
+        <a
+          href=" https://github.com/dssg-pt/mp-incendios"
+          target="_blank"
+          rel="noreferrer"
+        >
+          repositório mp-incêndios
+        </a>
+        .
       </Typography>
     </div>
   );

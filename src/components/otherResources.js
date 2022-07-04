@@ -1,27 +1,47 @@
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
+import "./styles.css";
 
 export default function Other() {
   return (
     <div>
       <Toolbar />
-      <Typography variant="h5" sx={{ margin: "1%" }}>
+      <Typography variant="h5" className="paragraphs">
         Outros recursos
       </Typography>
-      <Typography sx={{ margin: "1%" }}>
+      <Typography className="paragraphs">
         {" "}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        placerat at sem tincidunt porta. Donec eleifend porttitor odio id
-        facilisis. Ut justo ipsum, placerat eget arcu non, placerat convallis
-        diam. Aenean sit amet nunc tempor, pretium libero tincidunt, hendrerit
-        lorem. Sed facilisis lorem et nunc aliquet, sit amet feugiat lacus
-        viverra. Phasellus in diam non magna laoreet lacinia. Curabitur in
-        scelerisque ex. Sed ultricies pellentesque lacus sodales rutrum. Integer
-        congue placerat imperdiet. Suspendisse rhoncus lorem vitae lacinia
-        dignissim. Nam eget porttitor quam, non luctus erat. Nulla risus magna,
-        consectetur vitae pulvinar ut, congue ut tortor. Etiam elit enim, luctus
-        a quam sed, egestas accumsan neque. Suspendisse non ante in ex tristique
-        imperdiet vel a nisi. Ut vulputate imperdiet mattis.
+        No âmbito específico dos incêndios florestais, recomendamos os seguintes
+        recursos, que são boas fontes de informação oficial ou ferramentas que
+        disponibilizam estados da situação actualizados em tempo real:{" "}
+        <ul>
+          <li>
+            <a
+              href="http://www.prociv.pt/pt-pt/SITUACAOOPERACIONAL/Paginas/default.aspx?cID=14"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ocorrências activas, Proteccção Civil
+            </a>
+          </li>
+          <li>
+            {" "}
+            <a href="https://fogos.pt/" target="_blank" rel="noreferrer">
+              Fogos.pt
+            </a>{" "}
+          </li>
+          <li>
+            <a
+              href="http://www.prociv.pt/pt-pt/SITUACAOOPERACIONAL/Paginas/default.aspx?cID=14"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              Instituto de Conservação da Natureza e das Florestas (entidade
+              governamental responsável pela floresta nacional)
+            </a>
+          </li>
+        </ul>
       </Typography>
     </div>
   );
